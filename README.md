@@ -144,22 +144,6 @@ To change the IP address add the following variable to the `WebGoat/webgoat-cont
 server.address=x.x.x.x
 ```
 
-## 4. Run with custom menu
 
-For specialist only. There is a way to set up WebGoat with a personalized menu. You can leave out some menu categories or individual lessons by setting certain environment variables.
-
-For instance running as a jar on a Linux/macOS it will look like this:
-
-```Shell
-export TZ=Europe/Amsterdam # or your timezone
-export EXCLUDE_CATEGORIES="CLIENT_SIDE,GENERAL,CHALLENGE"
-export EXCLUDE_LESSONS="SqlInjectionAdvanced,SqlInjectionMitigations"
-java -jar target/webgoat-2023.8-SNAPSHOT.jar
-```
-
-Or in a docker run it would (once this version is pushed into docker hub) look like this:
-
-```Shell
-docker run -d -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 -e EXCLUDE_CATEGORIES="CLIENT_SIDE,GENERAL,CHALLENGE" -e EXCLUDE_LESSONS="SqlInjectionAdvanced,SqlInjectionMitigations" webgoat/webgoat
 ```
 
