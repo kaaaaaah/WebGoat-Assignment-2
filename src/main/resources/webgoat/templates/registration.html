@@ -31,7 +31,7 @@
                         <div class="col-sm-4">
                             <input autofocus="dummy_for_thymeleaf_parser" type="text" class="form-control"
                                    th:field="*{username}"
-                                   id="username" th:placeholder="#{username}" name='username'/>
+                                   id="username" th:placeholder="#{username}" name='username' required/>
                         </div>
                         <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Username error</span>
                     </div>
@@ -39,7 +39,7 @@
                         <label for="password" class="col-sm-2 control-label" th:text="#{password}">Password</label>
                         <div class="col-sm-4">
                             <input type="password" class="form-control" id="password" th:placeholder="#{password}"
-                                   name='password' th:value="*{password}"/>
+                                   name='password' th:value="*{password}" required/>
                         </div>
                         <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password error</span>
                     </div>
@@ -48,7 +48,7 @@
                             password</label>
                         <div class="col-sm-4">
                             <input type="password" class="form-control" id="matchingPassword" th:placeholder="#{password}"
-                                   name='matchingPassword' th:value="*{matchingPassword}"/>
+                                   name='matchingPassword' th:value="*{matchingPassword}" required/>
                         </div>
                         <span th:if="${#fields.hasErrors('matchingPassword')}" th:errors="*{matchingPassword}">Password error</span>
 
