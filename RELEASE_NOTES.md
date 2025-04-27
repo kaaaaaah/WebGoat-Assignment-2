@@ -275,9 +275,7 @@ Special thanks to the following contributors providing us with a pull request:
 
 ### Bug fixes
 
-- [#743 - Character encoding errors](https://github.com/WebGoat/WebGoat/issues/743)
-- [#811 - Flag submission fails](https://github.com/WebGoat/WebGoat/issues/811)
-- [#810 - Scoreboard for challenges shows csrf users](https://github.com/WebGoat/WebGoat/issues/810)
+
 - [#788 - strange copy in constructor](https://github.com/WebGoat/WebGoat/issues/788)
 - [#760 - Execution of standalone jar fails (Flyway migration step](https://github.com/WebGoat/WebGoat/issues/760)
 - [#766 - Unclear objective of vulnerable components practical assignment](https://github.com/WebGoat/WebGoat/issues/766)
